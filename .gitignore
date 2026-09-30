@@ -1,14 +1,55 @@
-# What a project can make again, and nobody needs to keep.
+# Node.js
 node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python
 .venv/
 venv/
+ENV/
+env/
 __pycache__/
-target/
-vendor/
-.gradle/
-DerivedData/
-.next/cache/
-.turbo/
-.cache/
-.DS_Store
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Heavy Machine Learning Weights (Mandatory 50MB source budget rule)
+*.pt
+*.pth
+*.onnx
+*.bin
+*.h5
+*.pb
+*.tflite
+*.safetensors
+*.engine
+weights/
+checkpoints/
+models/weights/
+
+# Datasets and Large Media
+datasets/
+data/
+*.mp4
+*.avi
+*.mov
+*.tar.gz
+*.zip
+
+# Logs and Caches
 *.log
+.cache/
+.turbo/
+.next/
+DerivedData/
+.DS_Store
+Thumbs.db
+
+# Environment Secrets
+.env
+.env.production
+.env.local
