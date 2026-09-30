@@ -1,0 +1,28 @@
+{
+  "name": "astra-vision",
+  "version": "1.0.0",
+  "description": "ASTRA VISION — AI-Powered Aircraft Detection & Classification built by Preetham Alawandimath",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && rm -rf dist && cp -r frontend/dist dist",
+    "preview": "npm --prefix frontend run preview",
+    "size-check": "python3 scripts/check_size.py",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:backend": "python3 scripts/test_api.py",
+    "test": "npm run test:backend && npm run test:frontend"
+  },
+  "keywords": [
+    "astra-vision",
+    "aircraft-detection",
+    "computer-vision",
+    "yolo",
+    "resnest50",
+    "grad-cam",
+    "fastapi",
+    "react",
+    "typescript"
+  ],
+  "author": "Preetham Alawandimath",
+  "license": "MIT"
+}
